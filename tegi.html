@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тэги</title>
+    <style>
+    body
+    {
+        background-color: #171616;
+    }
+    @font-face {
+	font-family: 'IBMPlexSans'; 
+	src: url(IBMPlexSans-Regular.ttf);
+    }
+    @font-face {
+	font-family: 'IBMPlexSans'; 
+	src: url(IBMPlexSans-Bold.ttf); 
+    }
+    div.header
+    {
+        width: 100%;
+        height: 82px;
+        background-color: #171616;
+        position: fixed;  
+        top: 0;
+        right: 30px;
+        z-index: 100;
+        margin-right: -30px;
+        border-style: solid;
+        border-width: 0 0 3px 0;
+        border-color: #c26d3d;
+    }
+    div.a1
+    {
+        height: 70px;
+        width: 70%;
+        position: absolute;
+        right: 0;
+        top: 5px;
+    }
+    div.a2
+    {
+        display: inline-block;
+        margin-left: 50px;
+        margin-right: 30px;
+        margin-top: 23px;
+    }
+    a.c2
+    {
+        text-decoration: none;
+        color: black;
+        font-family:Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-size: 22px;
+        color: white;
+    }
+    a.c2:hover 
+    {
+        border-style: solid;
+        border-radius: 15px;
+        border-color: #c26d3d;
+        border-width: 1px 1px 1px 1px;
+        padding: 2px 2px 2px 2px;
+    }
+    div.b1
+    {
+        width: 80%;
+        height: auto;
+        margin-top: 15px;
+        color: white;
+    }
+    div.b2
+    {
+        width: 14%;
+        height: 94%;
+        margin-left: 25px;
+        margin-right: 20px;
+        display: inline-block;
+        border-radius: 0;
+        position: fixed;  
+        top: 110px;
+        left: 120px;
+        z-index: 100;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 10px;
+        font-weight: 150;
+        padding-top: 29px;
+    }
+    div.b3
+    {
+        width: 50%;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: inline-block;
+        border-radius: 0;
+        position: absolute;
+        top: 110px;
+        left: 500px;
+        font-size: 18px;
+        font-family: "IBMPlexSans";
+        background-color: #383838;
+        padding: 10px 10px 10px 10px;
+        margin-bottom: 50px;
+    }
+    html
+    {
+        scroll-behavior: smooth;
+    }
+    a.c1
+    {
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 17px;
+        text-decoration: none;
+        color: white;
+    }
+    a.c1:hover
+    {
+        text-decoration: underline;
+    }
+    div.ac1
+    {
+        margin-top: 20px;
+    }
+    th
+    {
+        margin-left: 100px;
+        margin-right: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="a1">
+            <div class="a2">
+                <a href="index.html" class="c2">главная</a>
+            </div>
+            <div class="a2">
+                <a href="vidi.html" class="c2">виды сайтов</a>
+            </div>
+            <div class="a2">
+                <a href="sposobi.html" class="c2">способы создания сайта</a>
+            </div>
+            <div class="a2">
+                <a href="tegi.html" class="c2">тэги в HTML</a>
+            </div>
+            <div class="a2">
+                <a href="diz.html" class="c2">WEB-дизайн</a>
+            </div>
+        </div>
+    </div>
+    <div class="b1">
+        <div class="b2">
+            <h1>Содержание:</h1>
+    <nav>
+        <div class="ac1">
+            <ul><li><a href="#c1" class="c1">Основные теги</a></li></ul>
+        </div>
+        <div class="ac1">
+            <ul><li><a href="#c2" class="c1">Тэги оглавления</a></li></ul>
+        </div>
+        <div class="ac1">
+            <ul><li><a href="#c3" class="c1">Атрибуты тела документа</a></li></ul>
+        </div>
+        <div class="ac1">
+            <ul><li><a href="#c4" class="c1">Теги форматирования текста</a></li></ul>
+        </div>
+        <div class="ac1">
+            <ul><li><a href="#c5" class="c1">Гиперссылки</a></li></ul>
+        </div>
+        <div class="ac1">
+            <ul><li><a href="#c6" class="c1">Таблицы</a></li></ul>
+        </div>
+        <div class="ac1">
+            <ul><li><a href="#c7" class="c1">Атрибуты таблицы</a></li></ul>
+        </div>
+        <div class="ac1">
+            <ul><li><a href="#c8" class="c1">Фреймы</a></li></ul>
+        </div>
+        <div class="ac1">
+            <ul><li><a href="#c9" class="c1">Атрибуты фреймов</a></li></ul>
+        </div>
+        <div class="ac1">
+            <ul><li><a href="#c10" class="c1">Формы</a></li></ul>
+        </div>
+    </nav>
+        </div>
+        <div class="b3">
+<section id="c1">
+    <center class="center"><h3>Основные тэги</h3></center>
+    <p>&lt;html&gt;&lt;/html&gt;
+Указывает программе просмотра страниц, что это HTML документ.</p>
+
+    <p>&lt;head&gt;&lt;/head&gt;	
+Определяет место, где помещается различная информация не отображаемая в теле документа. Здесь располагается тег названия документа и теги для поисковых машин.</p>
+
+<p>&lt;body&gt;&lt;/body&gt;	
+Определяет видимую часть документа</p>
+</section>
+<section id="c2">
+    <center class="center"><h3>Тэги оглавления</h3></center>
+    <p>
+        &lttitle&gt;&lt/title&gt;	
+Помещает название документа в оглавление программы просмотра страниц
+    </p>
+</section>
+<section id="c3">
+    <center class="center"><h3>Атрибуты тела документа</h3></center>
+    <p>
+        &ltbody bgcolor=?>	
+        Устанавливает цвет фона документа, используя значение цвета в стандарте RGB - пример: FFFF00 - желтый цвет.
+    </p>
+    <p>
+        &ltbody text=?>	
+        Устанавливает цвет текста документа, используя значение цвета в стандарте RGB - пример: 00ff00 - зеленый цвет.
+    </p>
+    <p>
+        &ltbody link=?>	
+        Устанавливает цвет гиперссылок, используя значение цвета в стандарте RGB - пример: 00FF00 - зеленый цвет.
+    </p>
+    <p>        
+        &ltbody vlink=?>	
+        Устанавливает цвет гиперссылок, на которыхх вы уже побывали, используя значение цвета в виде стандарте RGB - пример: 333333 - темно-серый цвет.
+    </p>
+    <p>        
+        &ltbody alink=?>	
+        Устанавливает цвет гиперссылок при нажатии.
+    </p>
+</section>
+<section id="c4">
+    <center class="center"><h3>Теги форматирования текста</h3></center>
+    <p>
+        &ltpre>&lt/pre>	Обрамляет предварительно отформатированный текст. (как есть!) 
+    </p>
+    <p>
+    &lth1>&lt/h1>	
+    Создает
+
+    САМЫЙ БОЛЬШОЙ
+    заголовок (как отдельный абзац)
+    </p>
+    <p>
+    &lth6>&lt/h6>	
+    Создает
+
+    САМЫЙ МАЛЕНЬКИЙ
+    заголовок
+    </p>
+    <p>
+        &ltb>&lt/b>	Создает жирный текст
+    </p>
+    <p>
+        &lti>&lt/i>	Создает наклонный текст
+    </p>
+    <p>
+        &lttt>&lt/tt>	Создает текст - имитирующий стиль печатной машинки.
+    </p>
+    <p>
+        &ltcite>&lt/cite>	Используется для цитат, обычно наклонный текст.
+    </p>
+    <p>
+        &ltem>&lt/em>	Используется для выделения из текста слова (наклонный или жирный текст)
+    </p>
+    <p>
+        &ltfont size=?>&lt/font>	Устанавливает размер текста в пределах от 1 до 7.
+    </p>
+    <p>
+&ltfont color=?>&lt/font>	Устанавливает цвет текста, используя значение цвета в виде RRGGBB.
+    </p>
+<section id="c5">
+<center class="center"><h3>Гиперссылки</h3></center>
+    <p>
+        &lta href="URL">ТЕКСТ&lt/a>	Создает гиперссылку на другие документы или часть текущего документа. Здесь URL адрес ссылки, ТЕКСТ - текст ссылки.
+    </p>
+    <p>
+&lta href="URL"> &ltimg src="imgURL"> &lt/a>	Создает гиперссылку на рисунок, находящийся по адресу imgURL.
+    </p>
+    <p>
+"URL" = "links/main.htm"	Адрес документа main.htm, находящегося в локальной папке links данного компьютера.
+    </p>
+    <p>
+"URL" =
+"http://www.rambler.ru"	Ссылка на ресурс, находящийся на удаленном компьютере. В адресе присутствуют: программа связи с удаленным компьютером http (HyperText Transfer Protocol, разделители :// и интернет (IP) адрес искомого ресурса (в данном случае поискового сервера Rambler).
+    </p>
+    <p>
+&lta href="mailto:EMAIL">&lt/a>	Создает гиперссылку вызова почтовой программы для написания письма по указанному адресу.
+    </p>
+    <p>
+&lta name="NAME">&lt/a>	Отмечает часть текста как место перехода по гипперссылке в документе.
+    </p>
+    <p>
+&lta href="#NAME">&lt/a>	Создает гиперссылку на помечанную часть текущего документа.
+    </p>
+    <p>
+Использование кодов символов и специальных знаков в документе HTML
+    </p>
+</section>
+<center>
+    <table>
+        <tr>
+            <th>Код в документе HTML</th>
+            <th>Выводится браузером на экран</th>
+        </tr>
+        <tr>
+            <td>&<b>#</b>32;</td>
+            <td>пробел</td>
+        </tr>
+        <tr>
+            <td>&<b>#</b>33;</td>
+            <td>!</td>
+        </tr>
+        <tr>
+            <td>&<b>#</b>34</td>
+            <td>"</td>
+        </tr>
+        <tr>
+            <td>&<b>#</b>35;</td>
+            <td>#</td>
+        </tr>
+        <tr>
+            <td>&<b>#</b>36;</td>
+            <td>$</td>
+        </tr>
+        <tr>
+            <td>&<b>#</b>37;</td>
+            <td>%</td>
+        </tr>
+        <tr>
+            <td>&<b>#</b>38;</td>
+            <td>&</td>
+        </tr>
+        <tr>
+            <td>&<b>#</b>60;</td>
+            <td><</td>
+        </tr>
+        <tr>
+            <td>&<b>#</b>61;</td>
+            <td>=</td>
+        </tr>
+        <tr>
+            <td>&<b>#</b>62;</td>
+            <td>></td>
+        </tr>
+        <tr>
+            <td>&<b>#</b>169;</td>
+            <td>©</td>
+        </tr>
+        <tr>
+            <td>&<b>#</b>171;</td>
+            <td>«</td>
+        </tr>
+        <tr>
+            <td>&<b>#</b>177;</td>
+            <td>±</td>
+        </tr>
+        <tr>
+            <td>&<b>#</b>185;</td>
+            <td>¹</td>
+        </tr>
+        <tr>
+            <td>&<b>#</b>187;</td>
+            <td>»</td>
+        </tr>
+        <tr>
+            <td>&<b>#</b>197;</td>
+            <td>Å</td>
+        </tr>
+        <tr>
+            <td>&<b>n</b>bsp;</td>
+            <td>Неразрывный пробел</td>
+        </tr>
+        <tr>
+            <td>&<b>l</b>t;</td>
+            <td><</td>
+        </tr>
+        <tr>
+            <td>&<b>g</b>t;</td>
+            <td>></td>
+        </tr>
+        <tr>
+            <td>&<b>q</b>uot;</td>
+            <td>"</td>
+        </tr>
+    </table>
+</center>
+</section>
+<section id="c6">
+    <center class="center"><h3>Таблицы</h3></center>
+    <p>
+        &lttable>&lt/table>	Создает таблицу.
+    </p>
+    <p>
+        &lttr>&lt/tr>	Определяет строку в таблице.
+    </p>
+    <p>
+        &lttd>&lt/td>	Определяет отдельную ячейку в таблице.
+    </p>
+    <p>
+        &ltth>&lt/th>	Определяет заголовок таблицы (нормальная ячейка с отцентрованным жирным текстом)
+    </p>
+</section>
+<section id="c7">
+    <center class="center"><h3>Атрибуты таблицы</h3></center>
+    <p>
+    &lttable border=#>	Задает толщину рамки таблицы. (здесь 5)
+    </p>
+    <p>    
+        &lttable cellspacing=#>	Задает расстояние между ячейками таблицы.
+    </p>
+    <p>
+        &lttable cellpadding=#>	Задает расстояние между содержимым ячейки и ее рамкой.
+    </p>
+    <p>
+        &lttable width=#>	Устанавливает ширину таблицы в пикселах или процентах от ширины документа.
+    </p>
+    <p>
+        &lttr align=?> или &lttd align=?>	Устанавливает выравнивание ячеек в таблице, принимает значения: left, center, или right. (здесь right)
+    </p>
+    <p>
+        &lttr valign=?> или &lttd valign=?>	Устанавливает вертикальное выравнивание для ячеек таблицы, принимает значения : top, middle, или bottom.
+    </p>
+    <p>
+        &lttd colspan=#>	Указывает кол-во столбцев которое объединено в одной ячейке. (по умолчанию=1)
+    </p>
+    <p>    
+        &lttd rowspan=#>	Указывает кол-во строк которое объединено в одной ячейке. (по умолчанию=1)
+    </p>
+    <p>
+        &lttd nowrap>	Не позволяет программе просмотра делать перевод строки в ячейке таблицы.
+    </p>
+</section>
+<section id="c8">
+    <center class="center"><h3>Фреймы</h3></center>
+    <p>
+        &ltframeset>&lt/frameset>   Предваряет тег &ltbody> в документе, содержащем фреймы;
+    </p>
+    <p>
+        &ltframeset rows="value,value">	   Определяет строки в таблице фреймов, высота которых определена кол-вом пикселов или в процентном соотношении к высоте таблицы фреймов.
+    </p>
+    <p>
+        &ltframeset cols="value,value">	Определяет столбцы в таблице фреймов, ширина которых определена кол-вом пикселов или в процентном соотношении к ширине таблицы фреймов.
+    </p>
+    <p>
+        &ltframe>	Определяет единичный фрейм или область в таблице фреймов.
+    </p>
+    <p>
+        &ltnoframes>&lt/noframes>	Определяет, что будет показано в окне браузера если он не поддерживает фреймы.
+    </p>
+</section>
+<section id="c9">
+    <center class="center"><h3>Атрибуты фреймов</h3></center>
+<p>
+    &ltframe src="URL">	Определяет какой из HTML документов будет показан во фрейме.
+</p>
+<p>     
+    &ltframe name="name">	Указывает Имя фрейма или области, что позволяет перенаправлять информацию в этот фрейм, или область из других фреймов.
+</p>
+<p>        
+    &ltframe marginwidth=#>	Определяет величину отступов по левому и правому краям фрема; должно быть равно или больше 1.
+</p>
+<p>        
+    &ltframe marginheight=#>	Определяет величину отступов по верхнему и нижнему краям фрейма; должно быть равно или больше 1.
+</p>
+<p>        
+    &ltframe scrolling=VALUE>	Указывает будет ли выводится линейка прокрутки во фрейме; значение value может быть "yes," "no," или "auto". Значение по умолчанию для обычных документов - auto.
+</p>
+<p>        
+    &ltframe noresize>	Препятствует изменению размеров фрейма.
+</p>
+</section>
+<section id="c10">
+    <center class="center"><h3>Формы</h3></center>
+<p>
+    &ltform>&lt/form>	Создает формы
+</p>
+<p>
+    &ltselect multiple name="NAME" size=?>&lt/select>	Создает скролируемое меню. Size устанавливает кол-во пунктов меню, которое будет показано на экране, остальные будут доступны при использовании прокрутки.
+</p>
+<p>
+    &ltoption>	Указывает каждый отдельный элемент меню
+</p>
+<p>
+    &ltselect name="NAME">&lt/select>	Создает ниспадающее меню
+</p>
+<p>
+    &ltoption>	Указывает каждый отдельный элемент меню
+</p>
+<p>
+    &lttextarea name="NAME" cols=40 rows=8>&lt/textarea>	Создает окно для ввода текста. Columns указывает ширину окна; rows указывает его высоту.
+</p>
+<p>
+    &ltinput type="checkbox" name="NAME">	Создает checkbox. За тегом следует текст.
+</p>
+<p>
+    &ltinput type="radio" name="NAME" value="x">	Создает radio кнопку. За тегом следует текст.
+</p>
+<p>
+    &ltinput type=text name="foo" size=20>	Создает строку для ввода текста. Параметром Size указывается длина в символах.
+</p>
+<p>
+    &ltinput type="submit" value="NAME">	Создает кнопку "Принять"
+</p>
+<p>
+    &ltinput type="image" border=0 name="NAME" src="name.gif">	Создает кнопку "Принять" - для этого используется изображение
+</p>
+<p>
+    &ltinput type="reset">	Создает кнопку "Отмена"
+</p>
+</section>
+        </div>
+    </div>
+</body>
+</html>
